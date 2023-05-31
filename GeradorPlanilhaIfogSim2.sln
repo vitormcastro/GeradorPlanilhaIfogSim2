@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeradorPlanilhaIfogSim2", "GeradorPlanilhaIfogSim2\GeradorPlanilhaIfogSim2.csproj", "{CBA60D84-3255-4825-A2A7-AEB8B15A8184}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Application", "01-Application", "{1CA30712-1A79-4F72-A09F-38D3796ACBC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Domain", "02-Domain", "{4CD6977A-4025-4FAA-B957-35FBB5F81F40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Utils", "03-Utils", "{A35C9A4F-3295-4FD4-BFEB-05C3F32875CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBA60D84-3255-4825-A2A7-AEB8B15A8184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA60D84-3255-4825-A2A7-AEB8B15A8184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA60D84-3255-4825-A2A7-AEB8B15A8184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA60D84-3255-4825-A2A7-AEB8B15A8184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBA60D84-3255-4825-A2A7-AEB8B15A8184} = {1CA30712-1A79-4F72-A09F-38D3796ACBC6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AAD9DC6-718B-4D02-A607-C842C72059E3}
+	EndGlobalSection
+EndGlobal
