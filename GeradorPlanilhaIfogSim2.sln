@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Domain", "02-Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Utils", "03-Utils", "{A35C9A4F-3295-4FD4-BFEB-05C3F32875CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorPlanilhaIFogSim2.Domain", "GeradorPlanilhaIFogSim2.Domain\GeradorPlanilhaIFogSim2.Domain.csproj", "{8DEDA90E-68FD-49F0-AD64-4274F13AFBF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +23,17 @@ Global
 		{CBA60D84-3255-4825-A2A7-AEB8B15A8184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBA60D84-3255-4825-A2A7-AEB8B15A8184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBA60D84-3255-4825-A2A7-AEB8B15A8184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DEDA90E-68FD-49F0-AD64-4274F13AFBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEDA90E-68FD-49F0-AD64-4274F13AFBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEDA90E-68FD-49F0-AD64-4274F13AFBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEDA90E-68FD-49F0-AD64-4274F13AFBF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CBA60D84-3255-4825-A2A7-AEB8B15A8184} = {1CA30712-1A79-4F72-A09F-38D3796ACBC6}
+		{8DEDA90E-68FD-49F0-AD64-4274F13AFBF7} = {4CD6977A-4025-4FAA-B957-35FBB5F81F40}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9AAD9DC6-718B-4D02-A607-C842C72059E3}
