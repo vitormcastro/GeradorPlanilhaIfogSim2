@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             cbPlanilhas = new ComboBox();
@@ -36,10 +37,12 @@
             btnNew = new Button();
             label2 = new Label();
             txtNameFile = new TextBox();
-            textBox1 = new TextBox();
+            txtSaida = new TextBox();
             label3 = new Label();
             btnGerar = new Button();
+            ep = new ErrorProvider(components);
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ep).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -53,11 +56,13 @@
             // 
             // cbPlanilhas
             // 
+            cbPlanilhas.DropDownStyle = ComboBoxStyle.DropDownList;
             cbPlanilhas.FormattingEnabled = true;
             cbPlanilhas.Location = new Point(112, 19);
             cbPlanilhas.Name = "cbPlanilhas";
             cbPlanilhas.Size = new Size(240, 23);
             cbPlanilhas.TabIndex = 1;
+            cbPlanilhas.SelectedIndexChanged += cbPlanilhas_SelectedIndexChanged;
             // 
             // panel1
             // 
@@ -106,13 +111,13 @@
             txtNameFile.Size = new Size(240, 23);
             txtNameFile.TabIndex = 5;
             // 
-            // textBox1
+            // txtSaida
             // 
-            textBox1.Location = new Point(112, 95);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 280);
-            textBox1.TabIndex = 6;
+            txtSaida.Location = new Point(112, 95);
+            txtSaida.Multiline = true;
+            txtSaida.Name = "txtSaida";
+            txtSaida.Size = new Size(240, 280);
+            txtSaida.TabIndex = 6;
             // 
             // label3
             // 
@@ -133,6 +138,10 @@
             btnGerar.UseVisualStyleBackColor = true;
             btnGerar.Click += btnGerar_Click;
             // 
+            // ep
+            // 
+            ep.ContainerControl = this;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -140,7 +149,7 @@
             ClientSize = new Size(467, 450);
             Controls.Add(btnGerar);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtSaida);
             Controls.Add(txtNameFile);
             Controls.Add(label2);
             Controls.Add(btnNew);
@@ -152,6 +161,7 @@
             Text = "Gerador de Planilha";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ep).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,8 +175,9 @@
         private Button btnNew;
         private Label label2;
         private TextBox txtNameFile;
-        private TextBox textBox1;
+        private TextBox txtSaida;
         private Label label3;
         private Button btnGerar;
+        private ErrorProvider ep;
     }
 }
