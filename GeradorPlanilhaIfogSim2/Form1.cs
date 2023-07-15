@@ -135,6 +135,8 @@ namespace GeradorPlanilhaIfogSim2
                 {
                     SheetService.GeranateSheet(fileName, txtSaida.Text);
 
+                    txtSaida.Text = string.Empty;
+
                     SucessMessage("Planilha gerada com sucesso");
                 }
                 else
