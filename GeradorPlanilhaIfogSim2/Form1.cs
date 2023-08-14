@@ -58,12 +58,17 @@ namespace GeradorPlanilhaIfogSim2
         {
             newFile = true;
             txtNameFile.Enabled = true;
+            cbPlanilhas.Enabled = false;
+            btnNew.Text = "Existente";
         }
 
         private void ChangeWriteOldSheet()
         {
             newFile = false;
             txtNameFile.Enabled = false;
+            cbPlanilhas.Enabled = true;
+            btnNew.Text = "Novo";
+            IniciarComboBox();
         }
 
         private bool VerifyNameSheet()
@@ -124,7 +129,15 @@ namespace GeradorPlanilhaIfogSim2
         #region Events
         private void btnNew_Click(object sender, EventArgs e)
         {
-            ChangeGenerateNewSheet();
+            if (newFile)
+            {
+                ChangeWriteOldSheet();
+            }
+            else
+            {
+                ChangeGenerateNewSheet();
+            }
+            
         }
 
         private void btnGerar_Click(object sender, EventArgs e)
