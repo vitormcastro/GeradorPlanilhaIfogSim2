@@ -62,13 +62,14 @@ namespace GeradorPlanilhaIfogSim2
             btnNew.Text = "Existente";
         }
 
-        private void ChangeWriteOldSheet()
+        private void ChangeWriteOldSheet(bool click = false)
         {
             newFile = false;
             txtNameFile.Enabled = false;
             cbPlanilhas.Enabled = true;
             btnNew.Text = "Novo";
-            IniciarComboBox();
+            if (click)
+                IniciarComboBox();
         }
 
         private bool VerifyNameSheet()
@@ -131,13 +132,13 @@ namespace GeradorPlanilhaIfogSim2
         {
             if (newFile)
             {
-                ChangeWriteOldSheet();
+                ChangeWriteOldSheet(true);
             }
             else
             {
                 ChangeGenerateNewSheet();
             }
-            
+
         }
 
         private void btnGerar_Click(object sender, EventArgs e)
@@ -161,7 +162,7 @@ namespace GeradorPlanilhaIfogSim2
             {
                 ErrorMessage(ex.Message + Environment.NewLine + "Verifique os dados da saída do simulador");
             }
-           
+
         }
 
         private void cbPlanilhas_SelectedIndexChanged(object sender, EventArgs e)

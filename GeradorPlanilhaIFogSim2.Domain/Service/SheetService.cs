@@ -33,6 +33,11 @@ namespace GeradorPlanilhaIFogSim2.Domain.Service
                         columnName = $"{columnName}[{value.Split('=')[0].Trim()}]";
                         WriteInDictionary(sheet, columnName, Convert.ToDouble(value.Split('=')[1].Trim(), AmericanCulture));
                     }
+                    else if (value.Contains("%"))
+                    {
+                        double percent = Convert.ToDouble(value.Replace("%", ""), AmericanCulture) / 100;
+                        WriteInDictionary(sheet, columnName, percent);
+                    }
                     else
                     {
                         WriteInDictionary(sheet, columnName, Convert.ToDouble(value, AmericanCulture));
